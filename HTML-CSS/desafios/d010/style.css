@@ -1,0 +1,149 @@
+@charset "UTF-8";
+
+
+
+@font-face {
+    font-family: "Fonte";
+    src: url("idroid.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    background-color: lightgreen;
+    margin: 0;
+
+}
+
+header {
+    background-image: linear-gradient(to bottom, lightgreen, darkgreen);
+   
+    
+    
+}
+
+main {
+    background-color: white;
+    max-width: 800px;
+    min-width: 400px;
+    margin: auto;
+    padding: 16px;
+}
+
+nav {
+    color: white;
+    font: normal 400 10px "Bebas Neue" sans-serif;
+    word-spacing: 8px;
+    
+}
+
+main h1 {
+    font: normal 500 20px "Fonte";
+    color: darkgreen;
+    background-image: linear-gradient(to right, lightgreen, white);
+    
+  
+
+}
+
+header h1 {
+    font: normal 600 24px " Bebas Neue", sans-serif;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px black;
+}
+
+
+
+p.cabeçalho {
+    font: normal 400 16px arial;
+    text-align: center;
+    color: whitesmoke;
+    padding: 0px 28px;
+    text-shadow: 1px 1px black;
+
+}
+
+h2 {
+    font: normal 400 16px "Fonte";
+    background-image: linear-gradient(to right, lightgreen, white);
+    color: darkgreen
+}
+
+header {
+    background-image: linear-gradient(to right, lightgreen green, darkgreen);
+}
+
+.destaque {
+    color: green;
+    font-weight: bolder;
+
+}
+
+p {
+    text-indent: 30px;
+    text-align: justify;
+}
+
+footer {
+    background-color: darkgreen;
+    color: white;
+    font: normal 400 16px "Bebas Neue" sans-serif;
+    padding: 10px;
+    text-align: center;
+    
+
+
+}
+
+aside {
+    background-color: lightgreen;
+    border-radius: 10px; 
+    padding: 10px;
+    margin: 20px;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.15);
+    font: normal 300 13px Arial sans-serif;
+
+
+}
+
+aside > h3 {
+    background-color: darkgreen;
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 10px -10px;
+    border-radius: 10px 10px 0 0;
+    font: normal 400 16px Arial sans-serif
+
+}
+
+aside ul {
+    list-style-type:disc;
+    list-style-position: inside;
+    columns: 2;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+div.video {
+    background-color: darkgreen;
+    margin-bottom: 30px;
+    margin: 0px -20px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 50%;
+
+}
+
+div.video >iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
