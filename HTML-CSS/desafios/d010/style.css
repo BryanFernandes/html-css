@@ -11,13 +11,13 @@
 
 
 body {
-    background-color: lightgreen;
+    background-color: lightblue;
     margin: 0;
 
 }
 
 header {
-    background-image: linear-gradient(to bottom, lightgreen, darkgreen);
+    background-image: linear-gradient(to bottom, lightblue darkblue);
    
     
     
@@ -40,8 +40,8 @@ nav {
 
 main h1 {
     font: normal 500 20px "Fonte";
-    color: darkgreen;
-    background-image: linear-gradient(to right, lightgreen, white);
+    color: darkblue;
+    background-image: linear-gradient(to right, lightbluewhite);
     
   
 
@@ -68,15 +68,15 @@ p.cabeçalho {
 h2 {
     font: normal 400 16px "Fonte";
     background-image: linear-gradient(to right, lightgreen, white);
-    color: darkgreen
+    color: darkblue
 }
 
 header {
-    background-image: linear-gradient(to right, lightgreen green, darkgreen);
+    background-image: linear-gradient(to right, lightblue, blue, darkblue);
 }
 
 .destaque {
-    color: green;
+    color: blue;
     font-weight: bolder;
 
 }
@@ -87,7 +87,7 @@ p {
 }
 
 footer {
-    background-color: darkgreen;
+    background-color: darkblue;
     color: white;
     font: normal 400 16px "Bebas Neue" sans-serif;
     padding: 10px;
@@ -98,7 +98,7 @@ footer {
 }
 
 aside {
-    background-color: lightgreen;
+    background-color: lightblue;
     border-radius: 10px; 
     padding: 10px;
     margin: 20px;
@@ -109,7 +109,7 @@ aside {
 }
 
 aside > h3 {
-    background-color: darkgreen;
+    background-color: darkblue;
     color: white;
     padding: 10px;
     margin: -10px -10px 10px -10px;
@@ -131,7 +131,7 @@ img {
 }
 
 div.video {
-    background-color: darkgreen;
+    background-color: darkblue;
     margin-bottom: 30px;
     margin: 0px -20px;
     padding: 20px;
