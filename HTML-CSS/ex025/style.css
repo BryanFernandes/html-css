@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding:0;
+}
+
+html,body {
+    width: 100vw;
+    height: 100vh;
+}
+
+main { 
+    position: relative;
+    height: 100vh;
+
+}
+
+body {
+    background-image: url(images.jfif);
+    background-repeat: repeat;
+}
+
+section#telefone {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 600px;
+    width: 297px;
+    background-repeat: no-repeat;
+    background-image: url(ios8.png);
+    background-position: center;
+    
+}
+
+iframe#tela {
+    position: relative;
+    top: 132px;
+    left: 54px;
+    width: 190px;
+    height: 336px;
+    
+}
+
+
+section#redes-sociais img {
+    width: 40px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 1px 1px black;
+    box-sizing: border-box;
+}
+
+section#redes-sociais {
+    text-align: right;
+}
+
+section#redes-sociais img:hover {
+    border: 2px solid white;
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px black;
+}
+
