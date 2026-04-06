@@ -5,30 +5,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barbearia Bruno Soares</title>
     <link rel="stylesheet" href="../barbearia bruno/Estilos/stylebarber.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
-    <div class="container1">
-        <div class="area1"> imagem de capa
+    <header class="container1">
+        <div class="area1">
         </div>
-        <div class="menu"> <ul>
-            <li class="imenu"><a href="cortes">Cortes</a></li>
-            <li class="imenu"><a href="barba">Barba</a></li>
-            <li class="imenu"><a href="visagismo">Visagismo</a></li>
-            <li class="imenu"><a href="contato">Contato</a></li>
-            <li class="imenu"><a href="agendamento">Agendamento</a></li>
-        </ul> </div>
-        </div>
+        <nav class="menu"> <ul>
+            <li class="imenu"><a class="btn-menu" href="cortes.html" >Cortes</a></li>
+            <li class="imenu"><a class="btn-menu" href="barba.html">Barba</a></li>
+            <li class="imenu"><a class="btn-menu" href="visagismo.html">Visagismo</a></li>
+            <li class="imenu"><a class="btn-menu" href="contato.html">Contato</a></li>
+            <li class="imenu"><a class="btn-menu" href="agendamento.html">Agendamento</a></li>
+        </ul> </nav>
+    </header>
 
-        <div class="container2">
-            <div class="area2">
-            <p id="apresentacao">Especialista em transformação masculina, atuo como barbeiro e visagista focado em realçar o melhor de cada cliente. Mais do que um corte, ofereço uma experiência completa de mudança de visual, alinhando estilo, personalidade e identidade.<img id="imgbruno" src="Imagens/foto bruno.png" alt="imagem pessoal bruno"> <!--aqui eu quero duas colunas, uma da imagem dele e outra da apresentação-->
+        <main class="container2">
+
+            <section class="area2">
+          <div id="apresentacao">        Especialista em transformação masculina, atuo como barbeiro e visagista focado em realçar o melhor de cada cliente. Mais do que um corte, ofereço uma experiência completa de mudança de visual, alinhando estilo, personalidade e identidade. </div> <!--Preciso descobrir o código pra faze parágrafo aqui-->
+                
+        <div> <img id="imgbruno" src="Imagens/foto bruno.png" alt="imagem pessoal bruno"> <!--aqui eu quero duas colunas, uma da imagem dele e outra da apresentação--> </div>
+
+        </section>        
                 
 
-            </div>
-            <div class="area3"> serviços <!-- aqui eu também quero duas colunas, com a inversão dos lados de foto e texto em relação à segunda área e nomes "cortes" e etc clicáveis para a mesma aba de direcionamento do menu--> </div>
-            <div class="area4"> localização e espaço </div>
+            
+        <section class="area3"> 
+                <div class="card-servico"> <img id="corte" src="Imagens/img-corte.jpg" alt="cortes"> cortes</div>
+
+                <div class="card-servico"> <img id="barba"    src="Imagens/img-barba.jpg" alt="barba"> barba</div>
+
+                <div class="card-servico"><img id="visagismo" src="Imagens/img-visagismo2.jpg" alt="visagismo"> visagismo</div> <!-- aqui eu quero fotos de cada um dos serviços com efeito na imagem e botões clicáveis embaixo pra arquivos posteriores que eu for fazer
+                - corte 
+                - barba
+                -visagismo --> </section>
+
+
+
+        <section class="area4">  
+            <div class="swiper">
+    
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="Imagens/img-barbearia1.jfif"></div>
+      <div class="swiper-slide"><img src="Imagens/img-barbearia2.jfif"></div>
+      <div class="swiper-slide"><img src="Imagens/img-barbearia3.jfif"></div>
+      <div class="swiper-slide"><img src="Imagens/img-barbearia4.jfif"></div>
+    </div>
+
+    <!-- Botões -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+    <!-- Paginação (bolinhas) -->
+    <div class="swiper-pagination"></div>
+
+  </div>
+             <!--aqui eu quero um iframe com fotos do ambiente então vou encaixar o modelo e deixar fotos exemplo de outra barbearia--> </section>
+
             <div class="rodape"> rodape </div>
-                </div>
-        </div>
+        </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script>
+  const swiper = new Swiper('.swiper', {
+    loop: true,
+
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+</script>
+
 </body>
 </html>
