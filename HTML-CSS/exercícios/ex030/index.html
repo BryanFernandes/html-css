@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid Layout Demo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <header class="header">
+      <h1>Meu Site</h1> <!-- Não entendi por que no CSS tem align-items center sendo que header não tem filhos e o h1 não está no center, está left-->
+    </header>
+
+    <aside class="sidebar"> 
+      <nav>
+        <ul>
+          <li>Início</li>
+          <li>Sobre</li>
+          <li>Serviços</li>
+          <li>Contato</li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main"> <!--Não entendi a utilidade e a aplicabilidade desse exemplo com grid-area, porque a leitura desse codigo nao ta fazendo sentido pra mim. grid dentro do main com template comuns fazendo na tela cheia ter várias colunas sendo que o minmax tá 1fr-->
+
+      <h2>Conteúdo</h2>
+
+      <div class="cards">
+
+        <div class="card">Card 1</div>
+        <div class="card">Card 2</div>
+        <div class="card">Card 3</div>
+        <div class="card">Card 4</div>
+        <div class="card">Card 5</div>
+
+      </div>
+
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 - Meu Site</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>

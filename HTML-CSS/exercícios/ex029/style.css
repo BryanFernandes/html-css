@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+* {
+    margin: 0px;
+    padding:0px;   /* dúvidas quanto a usabilidade desses valores */ 
+}
+
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(131, 172, 185, 0.815);
+    color: white;
+    font-weight: bolder;
+}
+
+header {
+    background-color: rgb(86, 86, 168);
+    color: black;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none; /*tirar o símbolo de tópicos */
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    background-color: lightseagreen;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 1px;
+    border: 1px solid white;
+    transition: 0.3s;
+    box-shadow: 2px 2px 5px black;
+}
+
+.menu li:hover { /* Isso que dá o efeito do botão saltando*/
+    background: #20b2aa;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+
+.menu a {
+    text-decoration: none; /* remove estilo padrão de cor azul e sublinhado*/
+    color: black;
+}
+
+.menu a:visited {
+    color: black;
+}
+
+
+/*Detalhar melhor os códigos envolvendo o menu hamburguinho */
+
+#burguer {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px;
+
+}
+
+#burguer:hover {
+    background-color: white;
+    color: black;
+}
+
+#itens {
+    display: none;
+}
+
+#itens.ativo {
+    display:block;
+}
+
+
+main {
+    background-color: white;
+    width: 90vw;
+    width: 80%;
+    height: 100vh;
+    margin: 10px auto;
+    padding: 20px;
+    
+    
+}
+
+section {
+    background-color: lightgrey;
+    color: black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 30px;
+    justify-content: center;
+
+}
+
+/* Detalhar melhor o uso de media queries quando não começar o projeto por mobile first */
+
+@media screen and (min-width: 768px) {
+#burguer {
+    display: none;
+}
+
+#itens {
+    display: block;
+}
+
+.menu {
+    justify-content: flex-end
+}
+
+}
