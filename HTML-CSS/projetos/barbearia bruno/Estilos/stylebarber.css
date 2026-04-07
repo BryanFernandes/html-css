@@ -105,7 +105,8 @@ main{
     width: 90%;
     background-color: white;
     height: 100%;
-    margin: 10px auto;   
+    margin: 10px auto;
+    border-radius: 20px;   
 }
 
 .ibruno{
@@ -131,11 +132,14 @@ main{
     padding: 10px;
 }
 
+  /*Preciso que essa imagem em telas maiores não vaze demais em cima*/
 #imgbruno{
     max-width: 90%;
+    max-height: 60%;
     justify-self: center;
-    border-radius: 100px;
-    gap: 10px;
+    border-radius: 200px;
+    
+    
 }
 
 #imgbruno:hover{
@@ -164,9 +168,15 @@ main{
     text-align: center;
 }
 .card-servico img{
-    width: 80%;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    object-position: center;
     border-radius: 50px;
     transition: 0.3s;
+    padding-top: 10px;
+    
+   
     
 }
 
@@ -177,6 +187,7 @@ main{
     width: 100%;
     max-width: 800px;
     margin: 40px auto;
+    padding-bottom: 20px;
 }
 
 .swiper {
@@ -190,4 +201,44 @@ main{
     object-fit: cover;
     border-radius: 10px;
 }
+
+.contato{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    margin: 0;
+    font-family: "Jim Nightshade";
+    font-weight: 600;
+    font-size: 40px;
+    font-style: normal;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    color: white;
+}
+
+.btn-contatos{
+     font-weight: 400;
+    font-size: 30px;
+    width: 40px;
+    border-radius: 50%;
+    box-shadow: 1px 1px black;
+    box-sizing: border-box;
+}
+
+.btn-contatos:hover{
+    border: 2px solid white;
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px black;
+    
+}
+
+.btn-whatsapp{
+    width: 40px;
+}
+
+.btn-instagram{
+    width: 40px;
+}
+
+
 
