@@ -39,17 +39,15 @@
   font-style: normal;
 }
 
-
 body{
     background-color: rgb(185, 159, 71)
 }
 
 .container1 {
     display: grid;
-    height: 100vh;
+    min-height: 100vh;
     grid-template-rows: 95% repeat(9, auto);
     grid-template-columns: repeat(4, auto);
-    
 }
 
 .area1 {
@@ -67,6 +65,10 @@ body{
     display: grid;
     grid-area: 2/1/2/5;
     background-color: rgba(0, 0, 0, 0.952);
+    position: sticky;
+    top:0;
+    z-index: 1000;
+    background-color: black;
 }
 
 ul{
@@ -177,12 +179,7 @@ main{
     object-fit: cover;
     object-position: center;
     border-radius: 50px;
-    transition: 0.3s;
-    
-    
-    
-   
-    
+    transition: 0.3s;  
 }
 
 .card-servico img:hover{
@@ -247,14 +244,20 @@ main{
 }
 
 @media screen and (max-width: 768px) {
+
+    .container1{
+        min-height: 100vh;
+    } 
+
     .area1 {
     display: grid;
     background-image: url(../Imagens/logo\ barbearia.png);
-    background-size: auto;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     grid-area: 1/1/2/5;
     border: 3px solid black;
+    background-attachment: scroll;
     }
 }
 
