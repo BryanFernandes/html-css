@@ -43,27 +43,40 @@ body{
     background-color: rgb(185, 159, 71)
 }
 
-.container1 {
-    display: grid;
-    min-height: 100vh;
-    grid-template-rows: 95% repeat(9, auto);
-    grid-template-columns: repeat(4, auto);
+.whatsapp-float {
+  width: 40px; 
+  height:40px;
+  position: fixed;
+  right: 20px;
+  top: 80%;
+  transform: translateY(-50%);
+  background-image: url(../Imagens/logo-whatsapp-transparente.png);
+  background-size: cover;
+  padding: 14px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 1000;
+  transition: transform 0.3s ease;
 }
 
-.area1 {
-    display: grid;
-    background-image: url(../Imagens/logo\ barbearia.png);
+.whatsapp-float:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+
+.container1 {
+    background-image: url(../Imagens/logo-barbearia-otm.jpg);
     background-size: auto;
     background-repeat: no-repeat;
     background-attachment: fixed; /* aqui que faz o efeito parallax*/ 
     background-position: center;
-    grid-area: 1/1/2/5;
     border: 3px solid black;
+    height: 91vh;
 }
+   
+
+
 
 .menu{
-    display: grid;
-    grid-area: 2/1/2/5;
     background-color: rgba(0, 0, 0, 0.952);
     position: sticky;
     top:0;
@@ -77,31 +90,28 @@ ul{
     gap: none;
     color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 8px;
+    padding: 15px;
     justify-content: space-between;
 }
 
-a{
+.btn-menu{ /*entender melhor esse tipo de efeito e configuração depois*/
+    display: inline-block;
     text-decoration: none;
     color: inherit;
+    padding: 2px 5px;
+    border-radius: 8px;
+    background-color: transparent;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
 }
 
-a:hover{
+
+.btn-menu:hover{
     background-color: grey;
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0,0,0,0.3);
 }
 
-.btn-menu{ /*entender melhor esse tipo de efeito e configuração depois*/
-    display: inline-block;
-    padding: 2px 5px;
-    border-radius: 8px;
-
-    background-color: transparent;
-    border: 2px solid transparent;
-
-    transition: all 0.3s ease;
-}
 
 main{
     width: 90%;
@@ -125,15 +135,17 @@ main{
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 #apresentacao{
     font-family:'Times New Roman', Times, serif;
     font-size: larger;
     font-weight: 500;
+    text-indent: 30px;
     padding: 10px;
+    text-align: justify;
 }
 
   /*Preciso que essa imagem em telas maiores não vaze demais em cima*/
@@ -156,8 +168,8 @@ main{
     align-items: center;
     gap: 10px;
     width: 100%;
-    padding-top: 30px;
-    padding-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .area3 img {
@@ -189,7 +201,7 @@ main{
     width: 100%;
     max-width: 800px;
     margin: 40px auto;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
 }
 
 .swiper {
@@ -204,58 +216,74 @@ main{
     border-radius: 10px;
 }
 
-.contato{
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    margin: 0;
+
+#contato{
+    background-color: black;
+    color: white;
     font-family: "Jim Nightshade";
-    font-weight: 600;
+    font-weight: 700;
     font-size: 40px;
     font-style: normal;
     text-align: center;
-    background-color: rgb(0, 0, 0);
-    width: 100%;
-    color: white;
-}
 
-.btn-contatos{
-    font-family: "Jim Nightshade";
+}
+.contato{
+    display: grid;
+    grid-template-columns: 50px 60px;
+    grid-template-rows: 60px;
+    background-color: black;
+    font-family: arial;
+    font-size: 10px;
     font-weight: 400;
-    font-size: 30px;
-    width: 40px;
-    border-radius: 50%;
-    box-shadow: 1px 1px black;
-    box-sizing: border-box;
-}
-
-.btn-contatos:hover{
-    border: 1px solid white;
-    transform: translate(-3px, -3px);
-    box-shadow: 5px 5px 10px black;
+    color: grey;
+    gap: 10px;
+    align-items: center;
     
 }
 
-.btn-whatsapp{
+.contato > a{
     width: 40px;
 }
 
-.btn-instagram{
+.btn-contatos{
     width: 40px;
+    border-radius: 50%;
+    gap: 20px;
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    padding: 2px 5px;
+    background-color: transparent;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+
+}
+
+.btn-contatos:hover{
+    background-color: grey;
+    transform: scale(1.1);
+    box-shadow: 6px 12px rgba(0,0,0,0.3);
+}
+
+
+
+
+footer{
+    background-color: rgb(78, 73, 73);
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 20px;
+    text-align: center;
+
 }
 
 @media screen and (max-width: 768px) {
 
     .container1{
-        min-height: 100vh;
-    } 
-
-    .area1 {
-    display: grid;
     background-image: url(../Imagens/logo\ barbearia.png);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    grid-area: 1/1/2/5;
+    background-position: top;
     border: 3px solid black;
     background-attachment: scroll;
     }
