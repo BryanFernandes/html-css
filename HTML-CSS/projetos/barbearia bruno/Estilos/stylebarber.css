@@ -123,6 +123,8 @@ main{
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #apresentacao{
@@ -152,6 +154,8 @@ main{
     align-items: center;
     gap: 10px;
     width: 100%;
+    padding-top: 30px;
+    padding-bottom: 20px;
 }
 
 .area3 img {
@@ -174,7 +178,8 @@ main{
     object-position: center;
     border-radius: 50px;
     transition: 0.3s;
-    padding-top: 10px;
+    
+    
     
    
     
@@ -217,7 +222,8 @@ main{
 }
 
 .btn-contatos{
-     font-weight: 400;
+    font-family: "Jim Nightshade";
+    font-weight: 400;
     font-size: 30px;
     width: 40px;
     border-radius: 50%;
@@ -226,7 +232,7 @@ main{
 }
 
 .btn-contatos:hover{
-    border: 2px solid white;
+    border: 1px solid white;
     transform: translate(-3px, -3px);
     box-shadow: 5px 5px 10px black;
     
@@ -240,5 +246,16 @@ main{
     width: 40px;
 }
 
+@media screen and (max-width: 768px) {
+    .area1 {
+    display: grid;
+    background-image: url(../Imagens/logo\ barbearia.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-area: 1/1/2/5;
+    border: 3px solid black;
+    }
+}
 
 
