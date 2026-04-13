@@ -216,6 +216,22 @@ main{
     border-radius: 10px;
 }
 
+.adress{
+    font-family:'Times New Roman', Times, serif;
+    font-size: larger;
+    font-weight: 400;
+    padding: 10px;
+    text-align: center;
+}
+
+.iadress{
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+
+
+}
+
 
 #contato{
     background-color: black;
