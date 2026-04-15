@@ -135,8 +135,8 @@ main{
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 10px;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 #apresentacao{
@@ -168,8 +168,8 @@ main{
     align-items: center;
     gap: 10px;
     width: 100%;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .area3 img {
@@ -201,7 +201,8 @@ main{
     width: 100%;
     max-width: 800px;
     margin: 40px auto;
-    padding-bottom: 40px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
 .swiper {
@@ -252,8 +253,10 @@ main{
     font-size: 10px;
     font-weight: 400;
     color: grey;
-    gap: 10px;
+    gap: 20px;
     align-items: center;
+    padding-top: 80px;
+    padding-bottom: 80px;
     
 }
 
@@ -296,7 +299,7 @@ footer{
 @media screen and (max-width: 768px) {
 
     .container1{
-    background-image: url(../Imagens/logo\ barbearia.png);
+    background-image: url(../Imagens/logo-barbearia-mobile.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
