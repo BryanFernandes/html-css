@@ -310,6 +310,12 @@ footer{
     border: 3px solid black;
     background-attachment: scroll;
     }
+
+    .menu{
+        padding-right: 10px;
+    }
 }
+
+
 
 
