@@ -301,6 +301,11 @@ footer{
 
 }
 
+footer .portfolio {
+    text-decoration: underline;
+    color: white;
+}
+
 @media screen and (max-width: 768px) {
 
     .container1{
